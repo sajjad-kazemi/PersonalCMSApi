@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Models\\Models.csproj": {}
+    "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Models\\Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Models\\Models.csproj": {
+    "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Models\\Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Models\\Models.csproj",
+        "projectUniqueName": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Models\\Models.csproj",
         "projectName": "Models",
-        "projectPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Models\\Models.csproj",
+        "projectPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Models\\Models.csproj",
         "packagesPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Models\\obj\\",
+        "outputPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

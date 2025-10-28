@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Data\\Data.csproj": {}
+    "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Data\\Data.csproj": {
+    "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Data\\obj\\",
+        "outputPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

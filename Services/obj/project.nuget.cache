@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HXNlhq1HhZE=",
+  "dgSpecHash": "/Rj+81Zny9U=",
   "success": true,
-  "projectFilePath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\WorkOut\\Services\\Services.csproj",
+  "projectFilePath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\API\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\s.kazemi.POUYAANDISHAN\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\s.kazemi.POUYAANDISHAN\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
