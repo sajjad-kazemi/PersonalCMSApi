@@ -9,5 +9,7 @@ namespace Data.Entities
 
 		[Timestamp]
 		public byte[] RowVersion { get; set; } = Array.Empty<byte>();
+		public DateTime? ModifyDate { get; set; }
+		public DateTime? CreatedDate { get; set; }
 	}
 }

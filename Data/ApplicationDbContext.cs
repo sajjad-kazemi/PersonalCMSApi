@@ -1,4 +1,5 @@
 ﻿using Data.Entities;
+using Data.Migrations;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -27,6 +28,52 @@ namespace Data
 			}
 		}
 
+		public override int SaveChanges()
+		{
+			var entries = ChangeTracker
+				.Entries().Where(e => e.Entity is BaseEntity);
+
+			foreach (var entityEntry in entries)
+			{
+				var entity = (BaseEntity)entityEntry.Entity;
+				if (entityEntry.State == EntityState.Added)
+				{
+					var now = DateTime.UtcNow;
+					entity.CreatedDate = now;
+				}
+				if (entityEntry.State == EntityState.Modified)
+				{
+					var now = DateTime.UtcNow;
+					entity.ModifyDate = now;
+				}
+			}
+
+			return base.SaveChanges();
+		}
+
+		public override async Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+		{
+			var entries = ChangeTracker
+				.Entries().Where(e => e.Entity is BaseEntity);
+
+			foreach (var entityEntry in entries)
+			{
+				var entity = (BaseEntity)entityEntry.Entity;
+				if (entityEntry.State == EntityState.Added)
+				{
+					var now = DateTime.UtcNow;
+					entity.CreatedDate = now;
+					entity.ModifyDate = now;
+				}
+				if (entityEntry.State == EntityState.Modified)
+				{
+					var now = DateTime.UtcNow;
+					entity.ModifyDate = now;
+				}
+			}
+
+			return await base.SaveChangesAsync(cancellationToken);
+		}
 
 		public DbSet<User> Users { get; set; }
 		public DbSet<Content> Contents { get; set; }
