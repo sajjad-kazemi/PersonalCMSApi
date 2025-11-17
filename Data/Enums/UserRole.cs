@@ -9,6 +9,7 @@ namespace Data.Enums
 	public enum UserRole
 	{
 		ADMIN = 1,
-		USER
+		Author,
+		USER,
 	}
 }
