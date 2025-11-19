@@ -4,9 +4,16 @@
 	{
 		public ResponseBase(bool isSuccess , string message = null)
 		{
-			if (message is null && !isSuccess)
+			if (message is null)
 			{
-				message = "عملیات با خطا مواجه شد.";
+				if (isSuccess)
+				{
+					message = "عملیات با موفقیت انجام شد.";
+				}
+				else
+				{
+					message = "عملیات با خطا مواجه شد.";
+				}
 			}
 			Message = message;
 			IsSuccess = isSuccess;

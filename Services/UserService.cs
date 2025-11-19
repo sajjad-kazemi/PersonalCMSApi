@@ -112,6 +112,21 @@ namespace Services
 			};
 		}
 
+		public async Task<ResponseBase> UpdateUserRole(UpdateUserRoleRequest request)
+		{
+			try
+			{
+				var user = await _context.Users.FindAsync(request.UserId);
+				user.Role = (UserRole)Enum.Parse(typeof(UserRole) , request.Role);
+				await _context.SaveChangesAsync();
+				return new ResponseBase(true);
+			}
+			catch(Exception ex)
+			{
+				return new ResponseBase(false);
+			}
+		}
+
 		private string GenerateJwtToken(User user)
 		{
 			var jwtConfig = _configuration.GetSection("Jwt");
