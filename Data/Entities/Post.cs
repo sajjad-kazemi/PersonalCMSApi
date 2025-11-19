@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data.Enums
+namespace Data.Entities
 {
-	public enum UserRole
+	public class Post : Content
 	{
-		ADMIN = 1,
-		USER,
+		public string TextContent { get; set; }
 	}
 }

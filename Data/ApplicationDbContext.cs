@@ -76,6 +76,6 @@ namespace Data
 		}
 
 		public DbSet<User> Users { get; set; }
-		public DbSet<Content> Contents { get; set; }
+		public DbSet<Post> Posts { get; set; }
 	}
 }

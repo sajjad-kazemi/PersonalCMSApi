@@ -1,6 +1,8 @@
-﻿using CMSAPI.Controllers;
+﻿using Azure;
+using CMSAPI.Controllers;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Models;
 using Models.User;
 using Services;
 using System.Security.Claims;
@@ -21,6 +23,10 @@ namespace CMS.Controllers
 		[Authorize]
 		public async Task<IActionResult> GetCurrentUser()
 		{
+			if(User is not null)
+			{
+				return Ok(null);
+			}
 			var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
 			var response = await _userService.GetUser(new GetUserRequest
 			{
